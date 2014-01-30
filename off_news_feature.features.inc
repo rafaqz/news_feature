@@ -14,6 +14,13 @@ function off_news_feature_ctools_plugin_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_views_api().
+ */
+function off_news_feature_views_api($module = NULL, $api = NULL) {
+  return array("api" => "3.0");
+}
+
+/**
  * Implements hook_node_info().
  */
 function off_news_feature_node_info() {
@@ -23,7 +30,7 @@ function off_news_feature_node_info() {
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
-      'title_label' => t('Topic'),
+      'title_label' => t('Title'),
       'help' => '',
     ),
   );
