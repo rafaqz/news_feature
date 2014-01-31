@@ -6,3 +6,32 @@
  */
 
 include_once 'off_news_feature.features.inc';
+
+/**
+ * Implements hook_collabco_integration().
+ */
+function off_news_feature_collabco_integration() {
+  // Add links to views if a module wants to do that.
+  return array(
+    'off_news_feature' => array(
+      'entity' => array(
+        'node'=> array('news'),
+      ),
+      'tab' => array(
+        'News' => array(
+          'subpath' => 'news',
+          'node' => 'news',
+        ),
+      ),
+      'views' => array(
+        'news' => array(
+          'block' => array(
+            'add_content_link' => array(
+              'areas' => array('footer'),
+            ),
+          ),
+        ),
+      ),
+    ),
+  );
+}
