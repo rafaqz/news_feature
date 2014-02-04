@@ -17,12 +17,6 @@ function off_news_feature_collabco_integration() {
       'entity' => array(
         'node'=> array('news'),
       ),
-      'tab' => array(
-        'News' => array(
-          'subpath' => 'news',
-          'node' => 'news',
-        ),
-      ),
       'views' => array(
         'news' => array(
           'block' => array(
