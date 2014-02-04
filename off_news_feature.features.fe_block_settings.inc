@@ -19,7 +19,7 @@ function off_news_feature_default_fe_block_settings() {
     'delta' => 'news-block',
     'module' => 'views',
     'node_types' => array(),
-    'pages' => '',
+    'pages' => '<front>',
     'roles' => array(),
     'themes' => array(
       'custom_zurb' => array(
@@ -36,7 +36,7 @@ function off_news_feature_default_fe_block_settings() {
       ),
     ),
     'title' => '',
-    'visibility' => 0,
+    'visibility' => 1,
   );
 
   return $export;
