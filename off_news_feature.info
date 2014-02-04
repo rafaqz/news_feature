@@ -1,4 +1,4 @@
-name = OFF Blog Feature
+name = OFF News Feature
 core = 7.x
 package = Collabco
 dependencies[] = fe_block
