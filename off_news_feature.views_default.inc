@@ -12,8 +12,8 @@ function off_news_feature_views_default_views() {
 
   $view = new view();
   $view->name = 'news';
-  $view->description = '';
-  $view->tag = 'default';
+  $view->description = 'Show latest news content.';
+  $view->tag = 'News Feature';
   $view->base_table = 'node';
   $view->human_name = 'News';
   $view->core = 7;
