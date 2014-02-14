@@ -15,7 +15,11 @@ function off_news_feature_collabco_integration() {
   return array(
     'off_news_feature' => array(
       'entity' => array(
-        'node'=> array('news'),
+        'node'=> array(
+          'news' => array(
+            'add_content_link' => TRUE,
+          ),
+        ),
       ),
       'views' => array(
         'news' => array(
