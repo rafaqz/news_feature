@@ -18,6 +18,9 @@ function off_news_feature_collabco_integration() {
         'node'=> array(
           'news' => array(
             'add_content_link' => TRUE,
+            'image'=> array(
+              'enabled' => TRUE,
+            ),
           ),
         ),
       ),
