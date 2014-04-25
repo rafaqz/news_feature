@@ -39,5 +39,34 @@ function off_news_feature_default_fe_block_settings() {
     'visibility' => 1,
   );
 
+  $export['views-news_list-block'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'news_list-block',
+    'module' => 'views',
+    'node_types' => array(
+      0 => 'news',
+    ),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'custom_zurb' => array(
+        'region' => 'sidebar_second',
+        'status' => 1,
+        'theme' => 'custom_zurb',
+        'weight' => 0,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
   return $export;
 }
