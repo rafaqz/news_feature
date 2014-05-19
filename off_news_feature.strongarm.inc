@@ -105,7 +105,7 @@ function off_news_feature_strongarm() {
       'display' => array(
         'social_share' => array(
           'teaser' => array(
-            'weight' => '2',
+            'weight' => '3',
             'visible' => TRUE,
           ),
           'default' => array(
