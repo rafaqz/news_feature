@@ -103,8 +103,8 @@ function off_news_feature_views_default_views() {
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
 
-  /* Display: News */
-  $handler = $view->new_display('page', 'News', 'page');
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'mini';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
@@ -113,6 +113,18 @@ function off_news_feature_views_default_views() {
   $handler->display->display_options['pager']['options']['tags']['previous'] = '‹';
   $handler->display->display_options['pager']['options']['tags']['next'] = '›';
   $handler->display->display_options['path'] = 'news';
+
+  /* Display: Feed */
+  $handler = $view->new_display('feed', 'Feed', 'feed_1');
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['style_plugin'] = 'rss';
+  $handler->display->display_options['row_plugin'] = 'node_rss';
+  $handler->display->display_options['path'] = 'news/feed';
+  $handler->display->display_options['displays'] = array(
+    'block' => 'block',
+    'page' => 'page',
+    'default' => 0,
+  );
   $export['news'] = $view;
 
   $view = new view();
