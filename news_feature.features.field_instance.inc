@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * off_news_feature.features.field_instance.inc
+ * news_feature.features.field_instance.inc
  */
 
 /**
  * Implements hook_field_default_field_instances().
  */
-function off_news_feature_field_default_field_instances() {
+function news_feature_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance: 'comment-comment_node_news-comment_body'

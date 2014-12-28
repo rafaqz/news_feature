@@ -5,15 +5,15 @@
  * Code for the OFF news feature.
  */
 
-include_once 'off_news_feature.features.inc';
+include_once 'news_feature.features.inc';
 
 /**
- * Implements hook_collabco_integration().
+ * Implements hook_integration().
  */
-function off_news_feature_collabco_integration() {
+function news_feature_integration() {
   // Add links to views if a module wants to do that.
   return array(
-    'off_news_feature' => array(
+    'news_feature' => array(
       'entity' => array(
         'node'=> array(
           'news' => array(
