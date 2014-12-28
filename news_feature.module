@@ -2,7 +2,7 @@
 <?php
 /**
  * @file
- * Code for the OFF news feature.
+ * Code for the news feature.
  */
 
 include_once 'news_feature.features.inc';

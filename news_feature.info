@@ -1,6 +1,6 @@
-name = OFF News Feature
+name = News Feature
 core = 7.x
-package = Collabco
+package = Features
 dependencies[] = fe_block
 dependencies[] = features
 dependencies[] = strongarm
