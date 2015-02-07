@@ -33,6 +33,15 @@ function news_feature_integration() {
           ),
         ),
       ),
+      'views' => array(
+        'news_list' => array(
+          'block' => array(
+            'add_content_link' => array(
+              'areas' => array('footer'),
+            ),
+          ),
+        ),
+      ),
     ),
   );
 }
